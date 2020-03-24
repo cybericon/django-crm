@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'accounts/bootstrap.css' %}">
-</head>
-<body class="bg-light">
+    <link rel="stylesheet" href="{% static 'accounts/css/bootstrap.css' %}" />
+  </head>
+  <body class="bg-light">
     {% include 'accounts/navbar.html' %}
     <div class="container">
-    {% block body%} {% endblock %}
-    {% include 'accounts/footer.html' %}
+      {% block body%} {% endblock %} {% include 'accounts/footer.html' %}
+    </div>
+  </body>
+</html>
